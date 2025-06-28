@@ -25,8 +25,8 @@
       max-width: 80%;
       margin-bottom: 20px;
       transition: transform 0.3s ease;
-      filter: drop-shadow(0 0 6px rgba(255,255,255,0.85));
-      background: transparent;
+      filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.85));
+      mix-blend-mode: lighten;
     }
     header img:hover {
       transform: scale(1.05);
@@ -84,6 +84,10 @@
       border-bottom: 2px solid #00d1ff;
       padding-bottom: 5px;
     }
+    p, ul {
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
     ul {
       list-style: none;
       padding-left: 0;
@@ -94,7 +98,7 @@
       position: relative;
     }
     ul li::before {
-      content: "•";
+      content: "\2022";
       color: #00d1ff;
       position: absolute;
       left: 0;
@@ -171,12 +175,9 @@
 
   <section>
     <h2>About Us</h2>
-    <ul>
-      <li>Advanced prototype stage (hover height: 8 cm)</li>
-      <li>Magnetic propulsion + smart stabilization</li>
-      <li>Urban mobility–focused design</li>
-      <li>Looking for tech and financial partners</li>
-    </ul>
+    <p>HoverTech Innovations is pioneering the future of personal urban transportation through magnetic levitation technology. Our cutting-edge prototype demonstrates real hovering at 8 cm off the ground, showing tangible progress toward a new mode of smart, smooth, and sustainable travel.</p>
+    <p>We are a passionate team of engineers and designers building mobility products that redefine how people move in cities. Our vision combines innovation, safety, and style into one seamless experience—starting with our hoverboard and extending to future hover-based solutions.</p>
+    <p>With strategic partnerships and funding, we aim to scale the performance, safety, and usability of our prototypes to make hover mobility accessible for all.</p>
 
     <h2>Concept Visuals</h2>
     <div class="gallery">
